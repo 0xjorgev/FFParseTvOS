@@ -123,7 +123,7 @@ protocol FFParseRequestDelegate {
 /// FFParseRequest
 class FFParseRequest: NSObject {
     
-    let parse:ParseConfig = ParseConfig(app: "1puFz88EANTHK1NY5HeAQ89csHAwcPz4hSDkA5so", api: "TfJIz5XigjZH7xRgqXPBosHB7yPcLNjslpmE2OOv")
+    let parse:ParseConfig = ParseConfig(app: "YOUR-PARSE-APP-ID", api: "YOUR-PARSE-API-KEY")
     let config = NSURLSessionConfiguration.defaultSessionConfiguration()
     let queue:NSOperationQueue = NSOperationQueue()
     var delegate:FFParseRequestDelegate!
