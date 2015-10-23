@@ -1,5 +1,5 @@
 # FFParseTvOS
-A Minimalistic Swift Class that allows to use the Parse.com REST API from a single Class without any other framework
+A Minimalistic Swift Class that allows to use the Parse.com REST API from a single Class on the new TvOS without any other framework
 
 #Example
 
