@@ -9,19 +9,14 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, FFParseRequestDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var parse:FFParseRequest = FFParseRequest()
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-
-        parse.delegate = self
-//        parse.retriveParseObjectByClassName("Post")
-//        parse.retriveParseObjectById("Post", objectId: "p0rKbcZOjX")
-        parse.updateObject("Post", objectId: "p0rKbcZOjX", values: ["content":"This is the new updated content!!", "text":"This is the updated Text!!","number":237])
         return true
     }
 
@@ -46,12 +41,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, FFParseRequestDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-    //MARK - FFParseRequestDelegate
-    
-    func fillDataSource(res: FFObject) {
-     print("Parse Response: \(res)")
-    }
-
 }
 
