@@ -2,7 +2,7 @@
 A Minimalistic Swift Class that allows to use the Parse.com REST API from a single Class on the new TvOS without any other framework
 
 #Example
-
+```swift
         //Parse Calls
         let parse:FFParseRequest = FFParseRequest()
         //In this array add the name of the fiels in your parse.com object not the name of the object
@@ -29,3 +29,4 @@ A Minimalistic Swift Class that allows to use the Parse.com REST API from a sing
         
         //Update a parse Object
         parse.updateObject("Post", objectId: "p0rKbcZOjX", values: ["content":"This is the new updated content!!", "text":"This is the updated Text!!","number":237])
+````    
