@@ -209,7 +209,7 @@ class FFParseRequest: NSObject {
     }
     
     /**
-     Transforms the recived data from the request
+     Transforms the received data from the request
      into FFObject (Dictionary<String, AnyObject>
      
      - parameter data: Request Response data
